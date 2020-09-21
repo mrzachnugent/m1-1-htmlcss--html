@@ -1,1 +1,55 @@
-<!-- ...crickets... -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML Form</title>
+  </head>
+  <body>
+    <h1>Registration form</h1>
+    <form>
+      <label for="username">Username</label>
+      <input type="text" name="username" id="username" />
+      <label for="password">password</label>
+      <input type="password" name="password" id="password" />
+      <label for="email">Email</label>
+      <input type="email" name="email" id="email" />
+
+      <h2>Which taxi do you require?</h2>
+      <input type="radio" name="car" id="car" /><label for="car">Car</label>
+      <input type="radio" name="van" id="van" /><label for="van">Van</label>
+      <input type="radio" name="tuk" id="tuk" /><label for="tuk">Tuk Tuk</label>
+
+      <h2>Choose your extras</h2>
+      <input type="checkbox" name="baby" id="baby" required /><label for="baby"
+        >Baby seat</label
+      >
+      <input type="checkbox" name="wheel" id="wheel" /><label for="wheel"
+        >Wheelchair access</label
+      >
+      <input type="checkbox" name="priv" id="priv" /><label for="priv"
+        >Privacy windows</label
+      >
+
+      <h2>Where would you like us to pick you up?</h2>
+      <label for="locations">Pickup Location:</label>
+      <select name="locations" id="locations">
+        <option value="#">Select One</option>
+        <option value="montreal">Montreal</option>
+        <option value="toronto">Toronto</option>
+        <option value="vancouver">Vancouver</option>
+      </select>
+
+      <h2>Additional Instructions</h2>
+      <label for="special">Special</label>
+      <textarea
+        name="special"
+        id="special"
+        cols="30"
+        rows="2"
+        placeholder="provide special instructions here"
+      ></textarea>
+      <input type="submit" value="Submit" />
+    </form>
+  </body>
+</html>
